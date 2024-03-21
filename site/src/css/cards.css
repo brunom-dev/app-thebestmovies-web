@@ -1,0 +1,42 @@
+.card {
+    padding: 30px 40px;
+    flex-direction: row;
+    gap: 30px;
+    background-color: rgb(15, 15, 15) ;
+    color: #fff;
+    border-radius: 15px;
+}
+.card .card-cover {
+    transition: .4s;
+    border-radius: 8px;
+}
+
+.card .card-cover:hover {
+    box-shadow: 0px 0px 20px var(--green-main);
+    cursor: pointer;
+}
+
+.card .card-cover img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.card .card-text {
+    font-size: 14px;
+}
+
+.card .card-title .title-deitals {
+    font-size: 14px; 
+}
+
+.card .card-title .title-deitals img {
+    cursor: pointer;
+}
+
+.card .card-title .title-deitals p {
+    margin-top: 8px;
+}
+
+.card .card-text p {
+    font-size: 22px;
+}
