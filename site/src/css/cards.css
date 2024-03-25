@@ -43,34 +43,3 @@
     font-size: 20px;
 }
 
-@media screen and (max-width:1000px) {
-    .card {
-        flex-wrap: wrap;
-        padding: 30px 0px;
-        gap: 20px;
-    }
-
-    .card .card-cover {
-        max-width: 70%;
-    }
-
-    .card .card-text p {
-        font-size: 20px;
-    }
-
-    .card .card-title {
-        margin-top: 0 !important;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .card .card-text p {
-        font-size: 16px;
-    }
-
-    .row.text-center.justify-content-center.mt-3 {
-        margin-top: 10px !important;
-    }
-
-}

@@ -16,10 +16,14 @@
     color: var(--green-main);
 }
 
+#box-search {
+    margin: auto auto;
+}
+
 .search-input {
     padding: 10px 30px;
     font-size: 25px;
-    width: 60%;
+    width: 100%;
     background-image: linear-gradient(90deg, rgb(0, 81, 32), var(--green-main));
     color: #fff;
     border-radius: 8px;

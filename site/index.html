@@ -7,17 +7,18 @@
 
     <!-- EXTERNOS -->
     <link rel="stylesheet" href="src/libs/bootstrap/css/bootstrap.min.css">
-    <script src="src/libs/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./src/libs/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/cards.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/cards.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <!-- JS -->
-    <script src="src/js/main.js" type="module"></script>
-    <script src="src/js/api.js" type="module"></script>
-    <script  src="src/js/search.js" type="module"></script>
+    <script src="./src/js/main.js" type="module"></script>
+    <script src="./src/js/api.js" type="module"></script>
+    <script  src="./src/js/search.js" type="module"></script>
 </head>
 <body>
     <header class="container text-center mt-4">
@@ -26,8 +27,8 @@
                 <h1 id="titulo-header">The Movies</h1>
                 <p>Encontre e conheça mais sobre os <span class="text-strong">filmes de sucessos de streaming</span></p>
             </div>
-            <div class="col-12 mt-3">
-                <input type="search" id="search-input" class="search-input" placeholder="Pesquise os filmes e series aqui...">
+            <div class="col-10 mt-3 d-flex justify-content-center" id="box-search">
+                <input type="search" id="search-input" class="search-input" placeholder="Pesquise os filmes aqui...">
                 <input type="button" value="Buscar" id="search-button">
             </div>
         </div>
