@@ -1,11 +1,6 @@
 import { apiKey } from "./api.js";;
 import { showMovieDisplay } from "./main.js";
 
-const buttonPesquisa = document.querySelector('#search-button');
-const inputPesquisa = document.querySelector('#search-input');
-inputPesquisa.addEventListener('keypress', searchMovieEnter);
-buttonPesquisa.addEventListener('click', searchMovieButton);
-
 const searchMovieButton = () => {
     const searchTerm = inputPesquisa.value.trim();
 
@@ -37,8 +32,7 @@ const searchMovieButton = () => {
         location.reload()
     }
 }  
-
-const searchMovieEnter = event => {
+const searchMovieEnter = (event) => {
     if (event.key === 'Enter') {
         const searchTerm = inputPesquisa.value.trim(); // Obtém o valor do campo de pesquisa e remove espaços em branco no início e no final
 
@@ -70,4 +64,9 @@ const searchMovieEnter = event => {
             location.reload()
         }
     }
-}  
+}
+
+const buttonPesquisa = document.querySelector('#search-button');
+const inputPesquisa = document.querySelector('#search-input');
+inputPesquisa.addEventListener('keypress', searchMovieEnter);
+buttonPesquisa.addEventListener('click', searchMovieButton);
